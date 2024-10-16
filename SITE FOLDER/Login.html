@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h2>Login Page</h2>
+    <div class="container">
+
+        <!-- Login Section -->
+        <fieldset>
+            <h1>Login</h1>
+            <form id="loginForm" action="#" method="">
+                <label for="email">Email address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="firstlastname@gmail.com" required>
+
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Password123" required>
+
+                <button type="submit" class="login-btn">LOGIN</button>
+
+                <div class="remember">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <br>
+                <a href="#">Lost your password?</a>
+            </form>
+        </fieldset>
+    </div>
+
+    <script>
+        const SAMPLE_EMAIL = "firstlastname@gmail.com";
+        const SAMPLE_PASSWORD = "Password123";
+
+        let loginAttempts = 0;
+        const maxAttempts = 3;
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === SAMPLE_EMAIL && password === SAMPLE_PASSWORD) {
+                alert("Login successful! Redirecting to products page...");
+                window.location.href = "product.html";
+            } else {
+                loginAttempts++;
+                if (loginAttempts >= maxAttempts) {
+                    alert("Too many failed attempts! Redirecting to error page...");
+                    window.location.href = "error.html";
+                } else {
+                    alert("Invalid credentials. Please try again.");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

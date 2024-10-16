@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="product.html" class="logo">JAJEWELLERY</a>
+        <ul class="nav-links">
+            <li><a href="product.html">Continue Shopping</a></li>
+        </ul>
+    </nav>
+
+    <h1>Your Cart</h1>
+
+    <div id="cart-items">
+        <!-- Cart items will be injected here by JavaScript -->
+    </div>
+
+    <h2 id="total-price">Total: $0.00</h2>
+
+    <button onclick="clearCart()">Cancel Order</button>
+    <button onclick="exitCheckout()">Exit</button>
+    <button onclick="generateInvoice()">Generate Invoice</button>
+
+    <!-- Invoice will be shown here -->
+    <div id="invoice">
+        <!-- Invoice details will be injected here by JavaScript -->
+    </div>
+</body>
+</html>

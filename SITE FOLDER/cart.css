@@ -1,0 +1,21 @@
+
+h2 {
+    margin: 20px 0;
+}
+
+#cart-items {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#cart-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.checkout-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}

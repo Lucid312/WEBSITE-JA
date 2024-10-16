@@ -1,0 +1,132 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00472F;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure the navbar stays on top */
+}
+
+/* Logo Section */
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #006D4F; /* Lighter shade for hover effect */
+    border-radius: 5px;
+}
+
+/* User Section (like profile, login, etc.) */
+.user-options {
+    display: flex;
+    gap: 15px;
+}
+
+.user-options a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.user-options a:hover {
+    background-color: #006D4F; /* Same hover effect */
+    border-radius: 5px;
+}
+
+
+.content {
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.container {
+    position: relative;
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover; 
+    display: block;
+}
+
+.images {
+    display: flex;            
+    justify-content: space-around;
+    align-items: center;     
+    flex-wrap: wrap;            
+    margin-top: 20px;
+}
+
+.images img {
+    max-width: 30%;           
+    height:  300px;          
+    padding: 10px;             
+    transition: transform 0.3s ease; 
+}
+
+.images img:hover {
+    transform: scale(1.05);    
+}
+
+.images a img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.images img:hover {
+    transform: scale(1.05);     
+}
+
+.images a {
+    text-decoration: none; 
+}
+
+h1{
+    text-align: center;
+}
+
+#cart-count {
+    font-weight: bold;
+    background-color: black;
+    padding: 2px 8px;
+    color: white;
+}
